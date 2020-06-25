@@ -1,0 +1,17 @@
+{
+  "name": "html-render",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Express server with puppeteer to render pdf,png,base64 from html",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^4.0.1"
+  },
+  "nodemonConfig": {
+    "events": {}
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
