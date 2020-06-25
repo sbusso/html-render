@@ -10,6 +10,7 @@ app.post("/", async (req, res) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   let omitBackground = true;
+  let quality = null;
 
   let url =
     (req.query && req.query.url) ||
@@ -23,6 +24,10 @@ app.post("/", async (req, res) => {
   let options = {
     omitBackground: omitBackground
   };
+
+  if (req.is === "jpeg") {
+    options.quality = quality ? quality : 80;
+  }
 
   let result = null;
 
