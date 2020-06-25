@@ -44,9 +44,8 @@ app.post("/", async (req, res) => {
     };
   }
 
-  res.send(result);
-
   await browser.close();
+  res.send(result);
 });
 
 app.listen(port, () =>
