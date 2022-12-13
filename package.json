@@ -5,7 +5,7 @@
   "description": "Express server with puppeteer to render pdf,png,base64 from html",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "puppeteer": "^4.0.1"
   },
   "nodemonConfig": {
